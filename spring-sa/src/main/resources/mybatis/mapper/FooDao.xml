@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.swj.sa.example.dao.FooDao">
+
+	<select id="getFoo" parameterType="int"	resultType="com.swj.sa.example.model.Foo">
+		select * from foo where foo_no=#{foo_no}
+	</select>
+	
+	<select id="getFoos" resultType="com.swj.sa.example.model.Foo">
+		select * from foo
+	</select>
+	
+</mapper>
+  
